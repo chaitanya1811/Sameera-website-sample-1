@@ -1,0 +1,331 @@
+/* Custom color palette for CPL website based on provided color palette */
+
+:root {
+  /* Main colors based on CPL logo */
+  --primary: #C91C2E; /* Red - primary color */
+  --secondary: #1F1F1F; /* Eerie Black - secondary color */
+  --accent: #FFFFFF; /* White - accent color */
+
+  /* Update Bootstrap variables */
+  --blue: #C91C2E;
+  --red: #C91C2E;
+}
+
+/* Text colors */
+.text-primary {
+  color: #C91C2E !important;
+}
+
+/* Navbar styling */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+  color: #1F1F1F !important;
+  font-weight: 600;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+  color: #C91C2E !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+  color: #C91C2E !important;
+}
+
+.ftco-navbar-light.scrolled .nav-item.active > a {
+  color: #C91C2E !important;
+}
+
+.ftco-navbar-light .navbar-toggler {
+  color: #1F1F1F !important;
+}
+
+.ftco-navbar-light .navbar-toggler:hover,
+.ftco-navbar-light .navbar-toggler:focus {
+  color: #C91C2E !important;
+}
+
+/* Button styling */
+.btn.btn-primary {
+  background: #C91C2E !important;
+  border: 1px solid #C91C2E !important;
+}
+
+.btn.btn-primary:hover {
+  border: 1px solid #C91C2E !important;
+  background: #1F1F1F !important;
+  color: #FFFFFF !important;
+}
+
+.btn.btn-primary.btn-outline-primary {
+  border: 1px solid #C91C2E !important;
+  color: #C91C2E !important;
+}
+
+.btn.btn-primary.btn-outline-primary:hover {
+  background: #C91C2E !important;
+}
+
+/* Background colors */
+.bg-primary {
+  background-color: #C91C2E !important;
+}
+
+.ftco-section.bg-light {
+  background: #FFFFFF !important;
+}
+
+/* Links */
+a {
+  color: #C91C2E;
+}
+
+a:hover, a:focus {
+  color: #1F1F1F;
+}
+
+/* Footer */
+.ftco-footer {
+  background: #f0f0f0;
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer text colors */
+.ftco-footer .ftco-footer-widget h2 {
+  color: #1F1F1F;
+}
+
+.ftco-footer .ftco-footer-widget ul li,
+.ftco-footer .ftco-footer-widget ul li a,
+.ftco-footer .ftco-footer-widget ul li a span,
+.ftco-footer p {
+  color: #666666;
+}
+
+/* Footer button styling */
+.ftco-footer .ftco-footer-widget .btn-primary {
+  background: #C91C2E !important;
+  border: 2px solid #C91C2E !important;
+  color: #FFFFFF !important;
+}
+
+.ftco-footer .ftco-footer-widget .btn-primary:hover {
+  background: #1F1F1F !important;
+  border: 2px solid #1F1F1F !important;
+}
+
+/* Footer social icons */
+.ftco-footer-social li a {
+  background: #C91C2E;
+  border-color: #C91C2E;
+}
+
+.ftco-footer-social li a:hover {
+  background: #1F1F1F;
+  border-color: #1F1F1F;
+}
+
+/* Hero section styling */
+.hero-wrap, .hero-wrap-2 {
+  background-image: none !important;
+  background: linear-gradient(135deg, #FFFFFF 0%, #f5f5f5 40%, #e0e0e0 100%) !important;
+  position: relative;
+  border-bottom: 1px solid #d5d5d5;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Different padding for home vs inner pages */
+.hero-wrap {
+  padding: 8em 0 4em 0 !important;
+}
+
+.hero-wrap-2 {
+  padding: 6em 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+/* Add subtle pattern overlay */
+.hero-wrap:before, .hero-wrap-2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0ibm9uZSI+PC9yZWN0Pgo8cGF0aCBkPSJNMCAwTDIwIDIwTTIwIDBMMCwyMCIgc3Ryb2tlPSIjQzkxQzJFIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW9wYWNpdHk9IjAuMDUiPjwvcGF0aD4KPC9zdmc+');
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* Ensure content is above the pattern overlay */
+.hero-wrap .container, .hero-wrap-2 .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero section overlay - not needed with gradient background */
+.hero-wrap .overlay, .hero-wrap-2 .overlay {
+  display: none;
+}
+
+/* Hero section text styling */
+.hero-wrap h1, .hero-wrap-2 h1 {
+  color: #1F1F1F !important;
+  text-shadow: none;
+  font-weight: 700;
+}
+
+.hero-wrap p, .hero-wrap-2 p,
+.hero-wrap .breadcrumbs, .hero-wrap-2 .breadcrumbs {
+  color: #666666 !important;
+  text-shadow: none;
+}
+
+.hero-wrap .breadcrumbs a, .hero-wrap-2 .breadcrumbs a,
+.hero-wrap .fa, .hero-wrap-2 .fa {
+  color: #C91C2E !important;
+  text-shadow: none;
+}
+
+/* Hero section button styling */
+.hero-wrap .btn-primary, .hero-wrap-2 .btn-primary {
+  background: #C91C2E !important;
+  border: 2px solid #C91C2E !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 15px rgba(201, 28, 46, 0.2);
+  transition: all 0.3s ease;
+}
+
+.hero-wrap .btn-primary:hover, .hero-wrap-2 .btn-primary:hover {
+  background: #1F1F1F !important;
+  border: 2px solid #1F1F1F !important;
+  box-shadow: 0 6px 20px rgba(31, 31, 31, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Call to action buttons */
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+  background: #C91C2E;
+  border: 1px solid #C91C2E;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
+  background: #1F1F1F;
+  border: 1px solid #1F1F1F;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
+  border: 1px solid #1F1F1F;
+  background: #1F1F1F !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  color: #1F1F1F;
+}
+
+/* Services section */
+.services .icon {
+  background: #C91C2E;
+}
+
+.services:hover .icon {
+  background: #1F1F1F;
+}
+
+/* Counter section */
+.ftco-counter .icon {
+  color: #C91C2E;
+}
+
+/* Testimonial section */
+.testimony-section .owl-dots .owl-dot.active {
+  background: #C91C2E !important;
+}
+
+/* Property cards */
+.property-wrap .price {
+  background: #C91C2E;
+}
+
+.property-wrap .list span.location {
+  color: #1F1F1F;
+}
+
+/* Additional navbar hover effects */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #C91C2E;
+  transition: all 0.3s ease;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:after {
+  width: 80%;
+  left: 10%;
+}
+
+/* Active nav item styling */
+.ftco-navbar-light .navbar-nav > .nav-item.active > a:after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: 0;
+  left: 10%;
+  background-color: #C91C2E;
+}
+
+/* Additional styles for better color consistency */
+.ftco-section.bg-primary {
+  background: #C91C2E !important;
+}
+
+.ftco-section.bg-darken {
+  background: #1F1F1F !important;
+}
+
+/* Remove navbar background */
+.navbar.bg-dark {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Style the navbar */
+.ftco-navbar-light {
+  padding: 15px 0;
+}
+
+/* Mobile navbar styling */
+@media (max-width: 991.98px) {
+  .ftco-navbar-light {
+    background: rgba(255, 255, 255, 0.95) !important;
+    position: relative;
+    top: 0;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Make navbar background transparent when scrolled */
+.ftco-navbar-light.scrolled {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+  padding: 10px 0;
+}
