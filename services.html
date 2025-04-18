@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CPL</title>
+    <title>Our Services - The College Prep League</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -18,12 +18,172 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom-colors.css">
+    <link rel="stylesheet" href="css/team-cards.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+      /* Services page specific styling */
+      .services-intro {
+        padding: 4rem 0;
+        background: linear-gradient(135deg, #FFFFFF 0%, #f5f5f5 100%);
+      }
+
+      .services-intro h2 {
+        color: #1F1F1F;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 15px;
+      }
+
+      .services-intro h2:after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background: #C91C2E;
+        bottom: 0;
+        left: 25%;
+      }
+
+      .services-intro p {
+        color: #666;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+      }
+
+      .service-card {
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        height: 100%;
+        background: #fff;
+        margin-bottom: 3rem;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(201, 28, 46, 0.15);
+      }
+
+      .service-card .card-body {
+        padding: 2rem;
+      }
+
+      .service-card .card-title {
+        color: #1F1F1F;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        position: relative;
+        padding-bottom: 15px;
+      }
+
+      .service-card .card-title:after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        background: #C91C2E;
+        bottom: 0;
+        left: 0;
+      }
+
+      .service-card .card-text {
+        color: #666;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+
+      .service-card .service-number {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: #C91C2E;
+        color: #fff;
+        border-radius: 50%;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .service-list {
+        margin-top: 1.5rem;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .service-list li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 1rem;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .service-list li:before {
+        content: '\f00c';
+        font-family: 'FontAwesome';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #C91C2E;
+      }
+
+      .cta-section {
+        background: linear-gradient(135deg, #f5f5f5 0%, #FFFFFF 100%);
+        padding: 4rem 0;
+        text-align: center;
+      }
+
+      .cta-section h2 {
+        color: #1F1F1F;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+      }
+
+      .cta-section .lead {
+        color: #666;
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+        line-height: 1.7;
+      }
+
+      .btn-cta {
+        background: #C91C2E;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: 2px solid #C91C2E;
+        box-shadow: 0 4px 15px rgba(201, 28, 46, 0.2);
+      }
+
+      .btn-cta:hover {
+        background: #1F1F1F;
+        color: #fff;
+        border-color: #1F1F1F;
+        box-shadow: 0 6px 20px rgba(31, 31, 31, 0.3);
+        transform: translateY(-2px);
+      }
+
+      .btn-cta i {
+        margin-left: 8px;
+      }
+    </style>
   </head>
   <body>
 
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><img src="images/CPL_Logo.png" alt="CPL Logo" style="height: 50px;"></a>
+	      <a class="navbar-brand" href="index.html"><img src="images/CPL_Logo.png" alt="The College Prep League Logo" style="height: 50px;"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -33,7 +193,7 @@
 	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	          <li class="nav-item active"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item"><a href="https://calendly.com/sethysamira-thecollegeprepleague" target="_blank" class="nav-link">Book a Call</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -45,49 +205,63 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate pb-0 text-center">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Services <i class="fa fa-chevron-right"></i></span></p>
-            <h1 class="mb-3 bread">Services</h1>
+            <h1 class="mb-3 bread">Our Services</h1>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ftco-section ftco-no-pb ftco-no-pt bg-primary">
+    <section class="services-intro">
       <div class="container">
-        <div class="row d-flex no-gutters">
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services services-bg d-block text-center px-4 py-5">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-business"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Trusted by Thousands</h3>
-                <p>Students and parents trust our proven track record of helping students get into their dream universities.</p>
+        <div class="row">
+          <div class="col-md-10 mx-auto text-center">
+            <h2>Smart strategy. Individual attention. Real results.</h2>
+            <p>At College Prep League, we don't believe in cookie-cutter counseling. Whether you're starting early or racing toward a fast-approaching deadline, our services are designed to bring structure, insight, and momentum to your college admissions journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="service-card">
+              <div class="card-body">
+                <span class="service-number">1</span>
+                <h3 class="card-title">End-to-End College Counseling</h3>
+                <p class="card-text">From "Where do I start?" to "Which offer do I accept?"—we're with you every step of the way.</p>
+                <p class="card-text">This is our most comprehensive service, designed for students who want strategic, personalized support throughout the entire college admissions process. We begin early and think long-term—crafting a clear, customized game plan for every student.</p>
+                <p class="card-text"><strong>We help you:</strong></p>
+                <ul class="service-list">
+                  <li>Decide which country, colleges, and majors align best with your goals</li>
+                  <li>Build a profile that reflects who you are, not just what you've done</li>
+                  <li>Make high-impact choices—like whether to accept the responsibilities of a School Prefect or spend that time launching a meaningful community initiative (spoiler: we'll help you weigh both)</li>
+                  <li>Identify and share curated opportunities—internships, courses, competitions, and more</li>
+                  <li>Craft a personalized timeline, set your deadlines, and follow up to keep you on track</li>
+                  <li>Navigate standardized test planning—when to take them, whether to retake, and how to choose the best prep options</li>
+                  <li>Get full support on all application materials, including essays, forms, and recommendation strategy</li>
+                </ul>
+                <p class="card-text">Think of us as your personal admissions command center: helping you make tough decisions, manage the madness, and submit applications that feel genuinely yours—because they are.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services services-bg services-darken d-block text-center px-4 py-5">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-home"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Wide Range of Services</h3>
-                <p>From application strategy to essay editing, we offer comprehensive support for every step of the college application process.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services services-bg services-lighten d-block text-center px-4 py-5">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-stats"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Personalized Approach</h3>
-                <p>We tailor our guidance to each student's unique strengths, interests, and goals to create standout applications.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services services-bg d-block text-center px-4 py-5">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-quarantine"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Expert Counselors</h3>
-                <p>Our team includes graduates from top universities who provide insider knowledge and expert guidance throughout the process.</p>
+
+          <div class="col-md-12">
+            <div class="service-card">
+              <div class="card-body">
+                <span class="service-number">2</span>
+                <h3 class="card-title">Essay Guidance</h3>
+                <p class="card-text">For students who need expert support on the part of the application that matters most: the writing.</p>
+                <p class="card-text">We offer in-depth guidance on every kind of college admissions essay—from the Common App Personal Statement to UK Statements of Purpose, UC essays, and every supplemental in between.</p>
+                <p class="card-text"><strong>Here's what we do:</strong></p>
+                <ul class="service-list">
+                  <li>Help you brainstorm ideas that reflect your voice and values</li>
+                  <li>Teach you how to write with clarity, depth, and purpose</li>
+                  <li>Offer feedback through multiple rounds of revision</li>
+                  <li>Provide detailed final edits before submission</li>
+                </ul>
+                <p class="card-text">This is not just proofreading. It's mentorship. Our goal is to help you write essays that only you could write—clear, compelling, and unforgettable.</p>
               </div>
             </div>
           </div>
@@ -95,201 +269,57 @@
       </div>
     </section>
 
-    <section class="ftco-section services-section bg-darken">
-    	<div class="container">
-    		<div class="row justify-content-center">
-          <div class="col-md-12 text-center heading-section heading-section-white ftco-animate">
-          	<span class="subheading">Work flow</span>
-            <h2 class="mb-3">How it works</h2>
+    <section class="cta-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h2>Not sure which one's right for you?</h2>
+            <p class="lead">Let's talk.</p>
+            <a href="https://calendly.com/sethysamira-thecollegeprepleague" target="_blank" class="btn btn-cta">Book a Free Strategy Call <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
-    		<div class="row">
-    			<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services services-2">
-              <div class="media-body py-md-4 text-center">
-              	<div class="icon mb-1 d-flex align-items-center justify-content-center"><span>01</span>
-              	<img src="images/blob.svg" alt="">
-              	</div>
-                <h3>Evaluate Property</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services services-2">
-              <div class="media-body py-md-4 text-center">
-              	<div class="icon mb-1 d-flex align-items-center justify-content-center"><span>02</span>
-              	<img src="images/blob.svg" alt=""></div>
-                <h3>Meet Your Agent</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services services-2">
-              <div class="media-body py-md-4 text-center">
-              	<div class="icon mb-1 d-flex align-items-center justify-content-center"><span>03</span>
-              	<img src="images/blob.svg" alt=""></div>
-                <h3>Close the Deal</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services services-2">
-              <div class="media-body py-md-4 text-center">
-              	<div class="icon mb-1 d-flex align-items-center justify-content-center"><span>04</span>
-              	<img src="images/blob.svg" alt=""></div>
-                <h3>Have Your Property</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-    		</div>
-    	</div>
-    </section>
-
-    <section class="ftco-section">
-    	<div class="container">
-    		<div class="row justify-content-center">
-          <div class="col-md-12 text-center heading-section ftco-animate mb-5">
-          	<span class="subheading">Services</span>
-            <h2 class="mb-3">Special Services</h2>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center px-3 pb-4">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-home-repair"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Development</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center px-3 pb-4">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-sales"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Sales Marketing</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center px-3 pb-4">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-bank"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Brokerage</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center px-3 pb-4">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-team"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Property Management</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center px-3 pb-4">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-home-repair"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Development</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center px-3 pb-4">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-sales"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Sales Marketing</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center px-3 pb-4">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-bank"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Brokerage</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center px-3 pb-4">
-            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-team"></span></div>
-              <div class="media-body py-md-4">
-                <h3>Property Management</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-    		</div>
-    	</div>
+      </div>
     </section>
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md">
+          <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2"><img src="images/CPL_Logo.png" alt="CPL Logo" style="height: 40px;"></h2>
+              <h2 class="ftco-heading-2"><img src="images/CPL_Logo.png" alt="The College Prep League Logo" style="height: 40px;"></h2>
               <p>College Prep League helps students navigate the competitive world of undergraduate admissions abroad with a strategy-first, student-focused approach.</p>
-              <ul class="ftco-footer-social list-unstyled mt-5">
-                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-              </ul>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-md-2">
             <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Community</h2>
+              <h2 class="ftco-heading-2">Quick Links</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Search Properties</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>For Agents</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Reviews</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>FAQs</a></li>
+                <li><a href="index.html"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
+                <li><a href="about.html"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
+                <li><a href="services.html"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
+                <li><a href="https://calendly.com/sethysamira-thecollegeprepleague" target="_blank"><span class="fa fa-chevron-right mr-2"></span>Book a Call</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-md-2">
             <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">About Us</h2>
+              <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Our Story</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Meet the team</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
+                <li><a href="services.html"><span class="fa fa-chevron-right mr-2"></span>College Counseling</a></li>
+                <li><a href="services.html"><span class="fa fa-chevron-right mr-2"></span>Essay Guidance</a></li>
+                <li><a href="https://calendly.com/sethysamira-thecollegeprepleague" target="_blank"><span class="fa fa-chevron-right mr-2"></span>Strategy Call</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Company</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Press</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
+          <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<h2 class="ftco-heading-2">Contact Us</h2>
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon fa fa-map"></span><span class="text">Dehra Dun, India</span></li>
 	                <li><a href="tel:+919837177077"><span class="icon fa fa-phone"></span><span class="text">+91 9837177077</span></a></li>
 	                <li><a href="tel:+919557023241"><span class="icon fa fa-phone"></span><span class="text">+91 9557023241</span></a></li>
-	                <li><a href="mailto:sethyamit@gmail.com"><span class="icon fa fa-envelope pr-4"></span><span class="text">sethyamit@gmail.com</span></a></li>
-	                <li><a href="mailto:testby@gmail.com"><span class="icon fa fa-envelope pr-4"></span><span class="text">testby@gmail.com</span></a></li>
+	                <li><a href="mailto:sethyamit@gmail.com"><span class="icon fa fa-envelope"></span><span class="text">sethyamit@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -297,8 +327,7 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-
-           <p class="footer-company-name">Copyright &copy; <script>document.write(new Date().getFullYear());</script> College Prep League. All Rights Reserved.</p>
+            <p class="footer-company-name">Copyright &copy; <script>document.write(new Date().getFullYear());</script> College Prep League. All Rights Reserved.</p>
           </div>
         </div>
       </div>
@@ -327,3 +356,5 @@
 
   </body>
 </html>
+
+

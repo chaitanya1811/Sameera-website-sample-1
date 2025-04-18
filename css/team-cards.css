@@ -1,0 +1,165 @@
+/* Team Member Cards Styling */
+
+.team-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #FFFFFF 0%, #f5f5f5 100%);
+}
+
+.team-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  background: #fff;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(201, 28, 46, 0.15);
+}
+
+.team-card .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 3px solid #C91C2E;
+}
+
+.team-card .card-body {
+  padding: 2rem;
+}
+
+.team-card .card-title {
+  color: #1F1F1F;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.team-card .card-subtitle {
+  color: #C91C2E;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.team-card .card-text {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.team-section .section-heading {
+  margin-bottom: 3rem;
+}
+
+.team-section .section-heading h2 {
+  color: #1F1F1F;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.team-section .section-heading h2:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: #C91C2E;
+  bottom: 0;
+  left: 25%;
+}
+
+.team-section .section-heading p {
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.team-section .section-heading h3 {
+  color: #1F1F1F;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.team-conclusion {
+  background: linear-gradient(135deg, #f5f5f5 0%, #FFFFFF 100%);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.team-conclusion h2 {
+  color: #1F1F1F;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.team-conclusion h2:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: #C91C2E;
+  bottom: 0;
+  left: 25%;
+}
+
+.team-conclusion .lead {
+  color: #666;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.btn-cta {
+  background: #C91C2E;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #C91C2E;
+  box-shadow: 0 4px 15px rgba(201, 28, 46, 0.2);
+}
+
+.btn-cta:hover {
+  background: #1F1F1F;
+  color: #fff;
+  border-color: #1F1F1F;
+  box-shadow: 0 6px 20px rgba(31, 31, 31, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-cta i {
+  margin-left: 8px;
+}
+
+/* Placeholder for team member images */
+.team-img-placeholder {
+  height: 300px;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1rem;
+  border-bottom: 3px solid #C91C2E;
+}
+
+.team-img-placeholder i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #C91C2E;
+}
+
+.team-img-placeholder div {
+  text-align: center;
+}
