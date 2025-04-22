@@ -1,0 +1,101 @@
+/* Responsive Menu Styling */
+
+/* Global navbar adjustments for all screen sizes */
+.navbar {
+  padding: 15px 0;
+  position: relative;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1030;
+}
+
+@media (max-width: 991.98px) {
+  /* Navbar background on mobile */
+  .ftco-navbar-light {
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    min-height: 70px; /* Ensure consistent height */
+  }
+
+  /* Mobile-specific logo and button adjustments */
+  .navbar-brand img {
+    height: 40px !important; /* Smaller logo on mobile */
+  }
+
+  .navbar-toggler {
+    color: #C91C2E;
+    outline: none !important;
+    transition: all 0.3s ease;
+  }
+
+  /* Mobile menu container */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    left: 15px;
+    z-index: 1000;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  /* Mobile menu items */
+  .navbar-nav {
+    padding-left: 0;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: #1F1F1F !important;
+    padding: 12px 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: block;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover,
+  .navbar-nav .nav-item.active .nav-link {
+    color: #C91C2E !important;
+  }
+}
+
+/* Navbar on scroll */
+.ftco-navbar-light.scrolled {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0 !important;
+  transition: all 0.3s ease;
+}
+
+.ftco-navbar-light.scrolled .navbar-brand img {
+  height: 40px !important;
+  transition: all 0.3s ease;
+}

@@ -23,6 +23,7 @@
 .team-card .card-img-top {
   height: 300px;
   object-fit: cover;
+  object-position: center 30%; /* Adjust to show more of the top portion */
   border-bottom: 3px solid #C91C2E;
 }
 
