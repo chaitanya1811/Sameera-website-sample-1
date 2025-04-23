@@ -27,6 +27,11 @@
   left: 0;
 }
 
+/* Remove line under logo */
+.ftco-footer .logo-heading:after {
+  display: none;
+}
+
 .ftco-footer p {
   color: #666;
   line-height: 1.7;

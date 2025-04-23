@@ -17,10 +17,17 @@
 }
 
 /* Navbar styling */
+.ftco-navbar-light .navbar-nav > .nav-item {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
   color: #1F1F1F !important;
   font-weight: 600;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 1rem;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
@@ -127,11 +134,27 @@ a:hover, a:focus {
 
 /* Hero section styling */
 .hero-wrap, .hero-wrap-2 {
-  background-image: none !important;
-  background: linear-gradient(135deg, #FFFFFF 0%, #f5f5f5 40%, #e0e0e0 100%) !important;
   position: relative;
   border-bottom: 1px solid #d5d5d5;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Home page hero with background image */
+.hero-wrap {
+  background: url('../images/homebg.jpg') no-repeat center center !important;
+  background-size: cover !important;
+}
+
+/* About Us page hero with background image */
+.hero-wrap-2 {
+  background: url('../images/AboutUsBg.jpg') no-repeat center center !important;
+  background-size: cover !important;
+}
+
+/* Services page hero with background image */
+.services-hero {
+  background: url('../images/ServicesBg.jpg') no-repeat center center !important;
+  background-size: cover !important;
 }
 
 /* Different padding for home vs inner pages */
@@ -164,22 +187,41 @@ a:hover, a:focus {
   z-index: 2;
 }
 
-/* Hero section overlay - not needed with gradient background */
-.hero-wrap .overlay, .hero-wrap-2 .overlay {
-  display: none;
+/* Hero section overlay */
+.hero-wrap .overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
+  opacity: 1 !important;
+}
+
+.hero-wrap-2 .overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
+  opacity: 1 !important;
 }
 
 /* Hero section text styling */
-.hero-wrap h1, .hero-wrap-2 h1 {
-  color: #1F1F1F !important;
-  text-shadow: none;
+/* Home page hero text (white) */
+.hero-wrap h1 {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
 
-.hero-wrap p, .hero-wrap-2 p,
-.hero-wrap .breadcrumbs, .hero-wrap-2 .breadcrumbs {
-  color: #666666 !important;
-  text-shadow: none;
+.hero-wrap p {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* About Us page hero text (white) */
+.hero-wrap-2 h1 {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+.hero-wrap-2 p,
+.hero-wrap-2 .breadcrumbs {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero-wrap .breadcrumbs a, .hero-wrap-2 .breadcrumbs a,
@@ -265,7 +307,7 @@ h1, h2, h3, h4, h5,
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: 0;
+  bottom: 5px;
   left: 50%;
   background-color: #C91C2E;
   transition: all 0.3s ease;
@@ -282,7 +324,7 @@ h1, h2, h3, h4, h5,
   position: absolute;
   width: 80%;
   height: 2px;
-  bottom: 0;
+  bottom: 5px;
   left: 10%;
   background-color: #C91C2E;
 }
@@ -305,6 +347,7 @@ h1, h2, h3, h4, h5,
 /* Style the navbar */
 .ftco-navbar-light {
   padding: 15px 0;
+  background: #fff !important;
 }
 
 /* Mobile navbar styling */

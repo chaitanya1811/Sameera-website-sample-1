@@ -10,6 +10,12 @@
   padding: 0;
 }
 
+.navbar > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -22,6 +28,28 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 1030;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+}
+
+/* Desktop nav items */
+@media (min-width: 992px) {
+  .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 1rem;
+  }
 }
 
 @media (max-width: 991.98px) {
