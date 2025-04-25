@@ -1,0 +1,84 @@
+/* Process Section Styling */
+
+.process-section {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+.process-section h2 {
+  color: #1F1F1F;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.process-section h2:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #C91C2E;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.process-section .lead {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.process-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.process-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.process-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #C91C2E;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.process-card h3 {
+  color: #1F1F1F;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.process-card p {
+  color: #666;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 767.98px) {
+  .process-section {
+    padding: 3rem 0;
+  }
+  
+  .process-card {
+    margin-bottom: 1.5rem;
+  }
+}

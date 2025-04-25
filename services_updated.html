@@ -1,184 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Our Services - The College Prep League</title>
+    <title>The College Prep League - Our Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/animate.css">
-
+    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
+    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom-colors.css">
-    <link rel="stylesheet" href="css/team-cards.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive-menu.css">
-
-    <style>
-      /* Services page specific styling */
-      .services-intro {
-        padding: 4rem 0;
-        background: linear-gradient(135deg, #FFFFFF 0%, #f5f5f5 100%);
-      }
-
-      .services-intro h2 {
-        color: #1F1F1F;
-        font-weight: 700;
-        margin-bottom: 1.5rem;
-        position: relative;
-        display: inline-block;
-        padding-bottom: 15px;
-      }
-
-      .services-intro h2:after {
-        content: '';
-        position: absolute;
-        width: 50%;
-        height: 3px;
-        background: #C91C2E;
-        bottom: 0;
-        left: 25%;
-      }
-
-      .services-intro p {
-        color: #666;
-        font-size: 1.1rem;
-        line-height: 1.7;
-        margin-bottom: 2rem;
-      }
-
-      .service-card {
-        border: none;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        height: 100%;
-        background: #fff;
-        margin-bottom: 3rem;
-      }
-
-      .service-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 35px rgba(201, 28, 46, 0.15);
-      }
-
-      .service-card .card-body {
-        padding: 2rem;
-      }
-
-      .service-card .card-title {
-        color: #1F1F1F;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-        position: relative;
-        padding-bottom: 15px;
-      }
-
-      .service-card .card-title:after {
-        content: '';
-        position: absolute;
-        width: 50px;
-        height: 3px;
-        background: #C91C2E;
-        bottom: 0;
-        left: 0;
-      }
-
-      .service-card .card-text {
-        color: #666;
-        margin-bottom: 1.5rem;
-        line-height: 1.6;
-      }
-
-      .service-card .service-number {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        background: #C91C2E;
-        color: #fff;
-        border-radius: 50%;
-        font-weight: 700;
-        margin-bottom: 1rem;
-      }
-
-      .service-list {
-        margin-top: 1.5rem;
-        padding-left: 0;
-        list-style: none;
-      }
-
-      .service-list li {
-        position: relative;
-        padding-left: 30px;
-        margin-bottom: 1rem;
-        color: #666;
-        line-height: 1.6;
-      }
-
-      .service-list li:before {
-        content: '\f00c';
-        font-family: 'FontAwesome';
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: #C91C2E;
-      }
-
-      .cta-section {
-        background: linear-gradient(135deg, #f5f5f5 0%, #FFFFFF 100%);
-        padding: 4rem 0;
-        text-align: center;
-      }
-
-      .cta-section h2 {
-        color: #1F1F1F;
-        font-weight: 700;
-        margin-bottom: 1.5rem;
-      }
-
-      .cta-section .lead {
-        color: #666;
-        font-size: 1.2rem;
-        max-width: 600px;
-        margin: 0 auto 2rem;
-        line-height: 1.7;
-      }
-
-      .btn-cta {
-        background: #C91C2E;
-        color: #fff;
-        padding: 12px 30px;
-        border-radius: 30px;
-        font-weight: 600;
-        transition: all 0.3s ease;
-        border: 2px solid #C91C2E;
-        box-shadow: 0 4px 15px rgba(201, 28, 46, 0.2);
-      }
-
-      .btn-cta:hover {
-        background: #1F1F1F;
-        color: #fff;
-        border-color: #1F1F1F;
-        box-shadow: 0 6px 20px rgba(31, 31, 31, 0.3);
-        transform: translateY(-2px);
-      }
-
-      .btn-cta i {
-        margin-left: 8px;
-      }
-    </style>
+    <link rel="stylesheet" href="css/services.css">
   </head>
   <body>
 
@@ -201,7 +43,7 @@
 	  </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2 services-hero">
+    <section class="hero-wrap hero-wrap-2 services-hero" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -317,7 +159,7 @@
             	<h2 class="ftco-heading-2">Contact Us</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon fa fa-map-marker"></span><span class="text">13 Laxmi Road<br>Dehra Dun<br>Uttarakhand<br>248001</span></li>
+	                <li><span class="icon fa fa-map"></span><span class="text">13 Laxmi Road<br>Dehra Dun<br>Uttarakhand<br>248001</span></li>
 	                <li><a href="tel:+919837177077"><span class="icon fa fa-phone"></span><span class="text">+91 9837177077</span></a></li>
 	                <li><a href="tel:+919837023341"><span class="icon fa fa-phone"></span><span class="text">+91 9837023341</span></a></li>
 	                <li><a href="mailto:Samirasethy@thecollegeprepleague.com"><span class="icon fa fa-envelope"></span><span class="text">Samirasethy@thecollegeprepleague.com</span></a></li>
@@ -359,5 +201,3 @@
 
   </body>
 </html>
-
-

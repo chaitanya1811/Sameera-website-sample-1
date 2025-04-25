@@ -11,7 +11,7 @@
 .ftco-footer .ftco-heading-2 {
   color: #1F1F1F;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
   padding-bottom: 10px;
   font-size: 1.2rem;
@@ -38,7 +38,7 @@
 }
 
 .ftco-footer-widget ul li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -65,33 +65,26 @@
   margin-right: 12px;
 }
 
-
-
+/* Improved Contact Section Styling */
 .block-23 ul li {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
   align-items: flex-start;
 }
 
 .block-23 ul li .icon {
   color: #C91C2E;
-  margin-right: 20px;
+  margin-right: 15px;
   min-width: 20px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   font-size: 18px;
-  padding-top: 2px;
-}
-
-.block-23 ul li .icon.fa-map-marker {
-  font-size: 22px;
+  padding-top: 3px;
 }
 
 .block-23 ul li .text {
   color: #666;
   line-height: 1.6;
-  font-size: 15px;
-  padding-top: 2px;
 }
 
 .block-23 ul li a {
@@ -119,5 +112,9 @@
 
   .ftco-footer .ftco-heading-2 {
     margin-top: 1rem;
+  }
+  
+  .block-23 ul li {
+    margin-bottom: 15px;
   }
 }
