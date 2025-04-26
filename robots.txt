@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Futureproofing/
+
+Sitemap: https://thecollegeprepleague.com/sitemap.xml

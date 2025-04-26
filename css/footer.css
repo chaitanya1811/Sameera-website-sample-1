@@ -73,14 +73,21 @@
   align-items: flex-start;
 }
 
+.block-23 ul li:first-child {
+  align-items: flex-start;
+}
+
+.block-23 ul li:not(:first-child) {
+  align-items: center;
+}
+
 .block-23 ul li .icon {
   color: #C91C2E;
   margin-right: 20px;
   min-width: 20px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   font-size: 18px;
-  padding-top: 2px;
 }
 
 .block-23 ul li .icon.fa-map-marker {
@@ -91,13 +98,12 @@
   color: #666;
   line-height: 1.6;
   font-size: 15px;
-  padding-top: 2px;
 }
 
 .block-23 ul li a {
   display: flex;
   color: #666;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .block-23 ul li a:hover {
